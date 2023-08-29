@@ -42,6 +42,13 @@ python3 -u audioPlay.py
 
 9. The playlist will continue playing until all songs have been played.
 
+10. To integrate this player in terminal, `python3 -u audioPlay.py` can be aliased in ~/.bashrc or ~/.bash_aliases.
+    Example of alias line in to be added in ~/.bashrc or ~/.bash_aliases:
+```bash
+alias bhojpuri="python3 -u /full/path/to/audioPlay.py"
+```
+   Here, the player can be invoked by ccommand `bhojpuri`.
+
 ## Notes
 
 - Make sure to have a stable internet connection while running the script to ensure successful song downloads.
