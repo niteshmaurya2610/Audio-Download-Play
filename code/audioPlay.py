@@ -1,6 +1,14 @@
+## User Foder Path Defenition
+
+url_listPath ="/home/nitesh/Scripts/Python/Audio-Download-Play/song_url.txt"  ## set the path to txt file having youtube urls
+
+output_path = "/home/nitesh/Scripts/Python/Audio-Download-Play/Music"  ## set the path to Music Folder where media will be downloaded
+
+
+#################################################################################
 import os,time
 import vlc
-import selectors,select
+import select
 import sys
 from pynput import keyboard
 from pytube import YouTube
@@ -135,9 +143,7 @@ def main():
 
 
 
-## User Foder Path Defenition
-url_listPath ="/home/nitesh/Scripts/Python/Audio-Download-Play/song_url.txt"
-output_path = "/home/nitesh/Scripts/Python/Audio-Download-Play/Music"
+
 
 timeout_seconds = 1
 default_input = "default_value"
