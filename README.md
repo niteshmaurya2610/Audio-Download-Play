@@ -23,7 +23,7 @@ pip install pynput pytube3
 
 3. Open a terminal and navigate to the repository's directory.
 
-4. Create a text file named `song_url.txt` in the same directory and add YouTube URLs of the songs you want to download, each on a separate line.
+4. Create a text file named `song_url.txt` (change the directory path in line 3) and add YouTube URLs of the songs you want to download, each on a separate line.
 
 5. Run the script using the following command:
 
@@ -31,9 +31,9 @@ pip install pynput pytube3
 python3 -u audioPlay.py
 ```
 
-6. The script will ask if you want to download the songs. Type `y` and press Enter to initiate the download.
+6. The script will ask if you want to download the songs. Type `y` and press Enter to initiate the download (respond within 3 seconds otherwise by default it takes `n`).
 
-7. The script will download the audio files and save them in the "Music" directory. If the directory doesn't exist, it will be created.
+7. The script will download the audio files and save them in the "Music" directory. If the directory doesn't exist, it will be created (remember to change the directory path in line 5).
 
 8. The VLC media player will launch and play the downloaded audio files in sequence. You can control playback using the following commands:
    - Press Enter to play the next song.
