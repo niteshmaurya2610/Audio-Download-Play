@@ -13,7 +13,7 @@ You can install the required Python libraries using the following command:
 
 ```bash
 pip install pynput pytube3
-
+```
 
 ## Usage
 
@@ -28,8 +28,8 @@ pip install pynput pytube3
 5. Run the script using the following command:
 
 ```bash
-python3 audioPlay.py
-
+python3 -u audioPlay.py
+```
 
 6. The script will ask if you want to download the songs. Type `y` and press Enter to initiate the download.
 
