@@ -108,7 +108,7 @@ def main():
     # else:
     #     print(output_path, "Music Directory Exists.")
     print("Do you want to download the songs? (y/n) [3s Default: 'n']" )
-    if(get_input_with_timeout("",3)=='y'):
+    if(get_input_with_timeout("",3)[1]=='y'):
     # Download or locate all audio files
         for url in youtube_urls:
             try:
