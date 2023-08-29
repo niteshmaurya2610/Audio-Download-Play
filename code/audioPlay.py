@@ -99,8 +99,8 @@ def main():
         os.makedirs(output_path)
     # else:
     #     print(output_path, "Music Directory Exists.")
-
-    if(input("Do you want to download the songs? (y/n)")=='y'):
+    print("Do you want to download the songs? (y/n) [3s Default: 'n']" )
+    if(get_input_with_timeout("",3)=='y'):
     # Download or locate all audio files
         for url in youtube_urls:
             try:
@@ -125,7 +125,7 @@ def main():
         music_list.append(music_file)
     total_idx = len(music_list)
     idx = 0
-    while idx<=total_idx:
+    while idx<total_idx:
         music_file=music_list[idx]
         print(f"\033[96mNow Playing - {idx + 1}/{total_idx}. {music_file}\033[0m") # print in cyan blue
         play_audio(os.path.join(output_path, music_file), media_player)
